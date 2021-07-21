@@ -485,3 +485,56 @@ h2.section-title-heading {
 #contact .contact-address .contact-details i {
   color: var(--main-accent-color);
 }
+
+/* ================= PRICING ================= */
+#footer {
+  background-color: #2b323f;
+  padding: 6rem 0 2rem 0;
+  position: relative;
+}
+
+#footer::before {
+  content: '';
+  position: absolute;
+  background-color: #2b323f;
+  width: 100%;
+  height: 38%;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform-origin: top right;
+  top: -5rem;
+  right: 0;
+  left: 0;
+}
+
+#footer .footer-logo img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: block;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3rem;
+}
+
+#footer .social-icons {
+  margin-top: 2rem;
+}
+
+#footer .social-icons a {
+  margin-right: 10px;
+  color: #8d8c8c;
+  font-size: 1.2rem;
+}
+
+.copyright {
+  margin-top: 1rem;
+  color: #ffff;
+  font-size: 0.9rem;
+}
