@@ -37,3 +37,16 @@
     margin-bottom: -1rem;
   }
 }
+
+@media (max-width: 768px) {
+  /* Features section */
+  #features .feature-img img {
+    padding-bottom: 1rem;
+    max-width: 100% !important;
+    transform: translate(0%, -1%);
+    -webkit-transform: translate(0%, -1%);
+    -moz-transform: translate(0%, -1%);
+    -ms-transform: translate(0%, -1%);
+    -o-transform: translate(0%, -1%);
+  }
+}
