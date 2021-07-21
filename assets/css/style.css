@@ -33,13 +33,14 @@ h1 {
   font-weight: 600;
   text-transform: lowercase;
   font-size: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0.5rem 2rem;
+  /* padding-right: 2rem; */
 }
 
 .btn-white:hover {
   background-color: #ffff;
   color: var(--main-accent-color);
+  border: 2px solid var(--main-accent-color);
 }
 
 /* Section Title*/
@@ -154,8 +155,8 @@ h2.section-title-heading {
 .image-box img {
   width: 85%;
   position: absolute;
-  top: -3rem;
-  left: 11rem;
+  top: -1rem;
+  left: 12rem;
   z-index: 1;
 }
 
@@ -192,4 +193,95 @@ h2.section-title-heading {
   bottom: -50;
   right: 0;
   left: 0;
+}
+
+/* ================= FEATURES ================= */
+#features {
+  background-color: #fafafa;
+  padding-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+/* in case of use image */
+#features img {
+  display: block;
+  margin: 0 auto;
+}
+/* in case of setting text-align in css (not Bootstrap) */
+#features .feature-block {
+  text-align: center;
+}
+
+#features .feature-block i {
+  color: var(--main-accent-color);
+}
+
+#features .feature-block h3 {
+  color: var(--section-title-color-dark);
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#features .feature-img img {
+  padding-bottom: 1rem;
+}
+
+#features .feature-block p {
+  color: var(--body-color);
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+/* ================= DOWNLOAD ================= */
+#download {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 172, 217, 0.62),
+      rgba(105, 240, 174, 0.52)
+    ),
+    url('../img/bkg-download.jpg');
+
+  /* background-size: fill; */
+  /* background-repeat: no repeat; */
+  padding: 8rem 0 7rem 0;
+  position: relative;
+}
+
+#download::before {
+  content: '';
+  position: absolute;
+  background-color: #fafafa;
+  width: 100%;
+  height: 15%;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform-origin: top right;
+  top: -3rem;
+  right: 0;
+  left: 0;
+}
+
+#download .download-title h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#download .download-title p {
+  color: #ffff;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#download .download-btns i {
+  padding-right: 0.2rem;
 }
