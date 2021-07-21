@@ -290,7 +290,7 @@ h2.section-title-heading {
 
 /* ================= PRICING ================= */
 #pricing {
-  padding-bottom: 7rem;
+  padding: 2rem 0 10rem 0;
   position: relative;
 }
 
@@ -413,4 +413,75 @@ h2.section-title-heading {
 
 #pricing .pricing-table:nth-child(2) .table-header h4 {
   color: #ffff;
+}
+
+/* ================= PRICING ================= */
+#contact {
+  background-color: #fafafa;
+  padding: 2rem 0 7rem 0;
+  position: relative;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  background-color: #fafafa;
+  width: 100%;
+  height: 20%;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform-origin: top right;
+  top: -4rem;
+  right: 0;
+  left: 0;
+}
+
+.btn-contact {
+  background: linear-gradient(
+    to right,
+    rgba(0, 172, 217, 0.62),
+    rgba(105, 240, 174, 0.52)
+  );
+  padding: 0.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  border: none;
+  color: #ffff;
+  font-weight: 600;
+}
+
+.btn-contact:hover {
+  color: var(--main-accent-color);
+  background: #ffff;
+  border: 2px solid var(--main-accent-color);
+}
+
+#contact .contact-address h3 {
+  color: var(--section-title-color-dark);
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+#contact .contact-address p {
+  color: var(--body-color);
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+#contact .contact-address .contact-details ul li {
+  color: var(--body-color);
+  font-size: 1.2rem;
+  padding-bottom: 0.8rem;
+}
+
+#contact .contact-address .contact-details i {
+  color: var(--main-accent-color);
 }
