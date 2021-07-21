@@ -33,7 +33,7 @@
     margin-right: auto;
   }
 
-  #pricing .pricing-table:nth-child(3) {
+  #pricing .pricing-table:last-child {
     margin-bottom: -1rem;
   }
 }
